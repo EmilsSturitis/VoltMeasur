@@ -1,0 +1,982 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SAE_spec:ADS1248IPWR U?
+U 1 1 62D9AB66
+P 6550 4000
+F 0 "U?" H 6550 5670 50  0000 C CNN
+F 1 "ADS1248IPWR" H 6550 5579 50  0000 C CNN
+F 2 "SOP65P640X120-28N" H 6550 4000 50  0001 L BNN
+F 3 "" H 6550 4000 50  0001 L BNN
+	1    6550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SAE_spec:SC0915 U?
+U 1 1 62D9CA9C
+P 14650 2550
+F 0 "U?" H 14650 4417 50  0000 C CNN
+F 1 "SC0915" H 14650 4326 50  0000 C CNN
+F 2 "MODULE_SC0915" H 14050 4850 50  0001 L BNN
+F 3 "" H 14650 2550 50  0001 L BNN
+F 4 "3.73mm" H 15100 4850 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "Raspberry Pi" H 14000 4350 50  0001 L BNN "MANUFACTURER"
+F 6 "Manufacturer Recommendations" H 14600 4350 50  0001 L BNN "STANDARD"
+F 7 "1.6" H 14650 2550 50  0001 L BNN "PARTREV"
+	1    14650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 62D9E34D
+P 900 3200
+F 0 "J?" H 828 3438 50  0000 C CNN
+F 1 "Conn_Coaxial" H 828 3347 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 900 3200 50  0001 C CNN
+F 3 " ~" H 900 3200 50  0001 C CNN
+	1    900  3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 1 1 62D9F324
+P 4150 3150
+F 0 "U?" H 4150 3517 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 4150 3426 50  0000 C CNN
+F 2 "" H 4150 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 4150 3150 50  0001 C CNN
+	1    4150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 2 1 62DA10F1
+P 4200 5000
+F 0 "U?" H 4200 5367 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 4200 5276 50  0000 C CNN
+F 2 "" H 4200 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 4200 5000 50  0001 C CNN
+	2    4200 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 3 1 62DA23D2
+P 5850 1050
+F 0 "U?" H 5808 1096 50  0000 L CNN
+F 1 "OPA2333xxDGK" H 5808 1005 50  0000 L CNN
+F 2 "" H 5850 1050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 5850 1050 50  0001 C CNN
+	3    5850 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 I2C
+U 1 1 62DA2B6A
+P 15000 8100
+F 0 "I2C" H 15080 8092 50  0000 L CNN
+F 1 "Conn_01x04" H 15080 8001 50  0000 L CNN
+F 2 "" H 15000 8100 50  0001 C CNN
+F 3 "~" H 15000 8100 50  0001 C CNN
+	1    15000 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 Debug
+U 1 1 62DA39E1
+P 15000 8750
+F 0 "Debug" H 15080 8742 50  0000 L CNN
+F 1 "Conn_01x04" H 15080 8651 50  0000 L CNN
+F 2 "" H 15000 8750 50  0001 C CNN
+F 3 "~" H 15000 8750 50  0001 C CNN
+	1    15000 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 PWRin
+U 1 1 62DA3FA6
+P 15000 9300
+F 0 "PWRin" H 15080 9292 50  0000 L CNN
+F 1 "Conn_01x02" H 15080 9201 50  0000 L CNN
+F 2 "" H 15000 9300 50  0001 C CNN
+F 3 "~" H 15000 9300 50  0001 C CNN
+	1    15000 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 I2C?
+U 1 1 62DA9F97
+P 15200 4950
+F 0 "I2C?" H 15280 4942 50  0000 L CNN
+F 1 "Conn_01x04" H 15280 4851 50  0000 L CNN
+F 2 "" H 15200 4950 50  0001 C CNN
+F 3 "~" H 15200 4950 50  0001 C CNN
+	1    15200 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 2900 1050 0    197  ~ 0
+AFE
+Text Notes 13800 750  0    197  ~ 0
+MCU\n
+$Comp
+L Reference_Voltage:REF5040AD U?
+U 1 1 62DAB374
+P 9650 1700
+F 0 "U?" H 9650 2181 50  0000 C CNN
+F 1 "REF5040AD" H 9650 2090 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9575 1450 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ref5030.pdf" H 9600 1700 50  0001 C CIN
+	1    9650 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 8900 850  0    197  ~ 0
+Ref Voltage
+$Comp
+L Device:R_Small R?
+U 1 1 62DB0A24
+P 1850 3200
+F 0 "R?" V 1654 3200 50  0000 C CNN
+F 1 "9M" V 1745 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1850 3200 50  0001 C CNN
+F 3 "~" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DB1299
+P 2150 3200
+F 0 "R?" V 1954 3200 50  0000 C CNN
+F 1 "900K" V 2045 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2150 3200 50  0001 C CNN
+F 3 "~" H 2150 3200 50  0001 C CNN
+	1    2150 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DB15D0
+P 2450 3200
+F 0 "R?" V 2254 3200 50  0000 C CNN
+F 1 "90K" V 2345 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2450 3200 50  0001 C CNN
+F 3 "~" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DB1989
+P 2750 3200
+F 0 "R?" V 2554 3200 50  0000 C CNN
+F 1 "9K" V 2645 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2750 3200 50  0001 C CNN
+F 3 "~" H 2750 3200 50  0001 C CNN
+	1    2750 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DB1C4B
+P 3050 3200
+F 0 "R?" V 2854 3200 50  0000 C CNN
+F 1 "1K" V 2945 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3050 3200 50  0001 C CNN
+F 3 "~" H 3050 3200 50  0001 C CNN
+	1    3050 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DB2749
+P 2750 3750
+F 0 "R?" V 2554 3750 50  0000 C CNN
+F 1 "0R" V 2645 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2750 3750 50  0001 C CNN
+F 3 "~" H 2750 3750 50  0001 C CNN
+	1    2750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62DB2C29
+P 1450 3600
+F 0 "D?" V 1404 3680 50  0000 L CNN
+F 1 "D_TVS" V 1495 3680 50  0000 L CNN
+F 2 "" H 1450 3600 50  0001 C CNN
+F 3 "~" H 1450 3600 50  0001 C CNN
+	1    1450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62DB45E9
+P 3650 3850
+F 0 "D?" V 3604 3930 50  0000 L CNN
+F 1 "D_TVS" V 3695 3930 50  0000 L CNN
+F 2 "" H 3650 3850 50  0001 C CNN
+F 3 "~" H 3650 3850 50  0001 C CNN
+	1    3650 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 3450 1450 3200
+Wire Wire Line
+	1450 3200 1100 3200
+Wire Wire Line
+	1450 3200 1750 3200
+Connection ~ 1450 3200
+Wire Wire Line
+	1950 3200 2000 3200
+Wire Wire Line
+	2250 3200 2350 3200
+Wire Wire Line
+	2550 3200 2650 3200
+Wire Wire Line
+	2850 3200 2950 3200
+Wire Wire Line
+	2000 3200 2000 3750
+Wire Wire Line
+	2000 3750 2650 3750
+Connection ~ 2000 3200
+Wire Wire Line
+	2000 3200 2050 3200
+Wire Wire Line
+	1450 3750 1450 3800
+Wire Wire Line
+	1450 3800 900  3800
+Wire Wire Line
+	900  3800 900  3400
+Wire Wire Line
+	1450 3800 1450 4050
+Wire Wire Line
+	1450 4050 3150 4050
+Wire Wire Line
+	3650 4050 3650 4000
+Connection ~ 1450 3800
+Wire Wire Line
+	2850 3750 3250 3750
+Wire Wire Line
+	3250 3750 3250 3700
+Wire Wire Line
+	3250 3700 3600 3700
+Wire Wire Line
+	3150 3200 3250 3200
+Wire Wire Line
+	3250 3200 3250 3600
+Wire Wire Line
+	3250 3600 3150 3600
+Wire Wire Line
+	3150 3600 3150 4050
+Connection ~ 3150 4050
+Wire Wire Line
+	3150 4050 3650 4050
+Wire Wire Line
+	3850 3050 3600 3050
+Wire Wire Line
+	3600 3050 3600 3700
+Connection ~ 3600 3700
+Wire Wire Line
+	3600 3700 3650 3700
+Wire Wire Line
+	3850 3250 3850 3400
+Wire Wire Line
+	3850 3400 4450 3400
+Wire Wire Line
+	5550 3100 5100 3100
+Wire Wire Line
+	5100 3100 5100 3250
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 1 1 62DCE27A
+P 10400 2750
+F 0 "U?" H 10400 3117 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 10400 3026 50  0000 C CNN
+F 2 "" H 10400 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10400 2750 50  0001 C CNN
+	1    10400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 2 1 62DD0AED
+P 10350 3450
+F 0 "U?" H 10350 3817 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 10350 3726 50  0000 C CNN
+F 2 "" H 10350 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10350 3450 50  0001 C CNN
+	2    10350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 3 1 62DD17BB
+P 10350 4200
+F 0 "U?" H 10308 4246 50  0000 L CNN
+F 1 "OPA2333xxDGK" H 10308 4155 50  0000 L CNN
+F 2 "" H 10350 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10350 4200 50  0001 C CNN
+	3    10350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 1 1 62DD83CE
+P 10450 5250
+F 0 "U?" H 10450 5617 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 10450 5526 50  0000 C CNN
+F 2 "" H 10450 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10450 5250 50  0001 C CNN
+	1    10450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 2 1 62DD83D4
+P 10400 5950
+F 0 "U?" H 10400 6317 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 10400 6226 50  0000 C CNN
+F 2 "" H 10400 5950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10400 5950 50  0001 C CNN
+	2    10400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 3 1 62DD83DA
+P 10400 6700
+F 0 "U?" H 10358 6746 50  0000 L CNN
+F 1 "OPA2333xxDGK" H 10358 6655 50  0000 L CNN
+F 2 "" H 10400 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 10400 6700 50  0001 C CNN
+	3    10400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DE1D2C
+P 10750 1550
+F 0 "R?" V 10554 1550 50  0000 C CNN
+F 1 "90K" V 10645 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 10750 1550 50  0001 C CNN
+F 3 "~" H 10750 1550 50  0001 C CNN
+	1    10750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62DE23ED
+P 10750 1900
+F 0 "R?" V 10554 1900 50  0000 C CNN
+F 1 "90K" V 10645 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 10750 1900 50  0001 C CNN
+F 3 "~" H 10750 1900 50  0001 C CNN
+	1    10750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1600 10300 1600
+Wire Wire Line
+	10300 1600 10300 1350
+Wire Wire Line
+	10300 1350 10750 1350
+Wire Wire Line
+	10750 1350 10750 1450
+Wire Wire Line
+	10750 1800 10750 1700
+Wire Wire Line
+	9550 2000 9550 2150
+Wire Wire Line
+	9550 2150 10750 2150
+Wire Wire Line
+	10750 2150 10750 2000
+Wire Wire Line
+	10750 1700 11250 1700
+Wire Wire Line
+	11250 1700 11250 2300
+Wire Wire Line
+	11250 2300 9700 2300
+Wire Wire Line
+	9700 2300 9700 2650
+Wire Wire Line
+	9700 2650 10100 2650
+Connection ~ 10750 1700
+Wire Wire Line
+	10750 1700 10750 1650
+Wire Wire Line
+	9700 2650 9700 3350
+Wire Wire Line
+	9700 3350 10050 3350
+Connection ~ 9700 2650
+Wire Wire Line
+	9700 3350 9700 5150
+Wire Wire Line
+	9700 5150 10150 5150
+Connection ~ 9700 3350
+Wire Wire Line
+	9700 5150 9700 5850
+Wire Wire Line
+	9700 5850 10100 5850
+Connection ~ 9700 5150
+Wire Wire Line
+	10150 5350 10000 5350
+Wire Wire Line
+	10000 5350 10000 5500
+Wire Wire Line
+	10000 5500 10750 5500
+Wire Wire Line
+	10750 5500 10750 5250
+Wire Wire Line
+	10100 6050 10000 6050
+Wire Wire Line
+	10000 6050 10000 6300
+Wire Wire Line
+	10000 6300 10800 6300
+Wire Wire Line
+	10800 6300 10800 5950
+Wire Wire Line
+	10800 5950 10700 5950
+Wire Wire Line
+	10050 3550 9950 3550
+Wire Wire Line
+	9950 3550 9950 3750
+Wire Wire Line
+	9950 3750 10750 3750
+Wire Wire Line
+	10750 3750 10750 3450
+Wire Wire Line
+	10750 3450 10650 3450
+Wire Wire Line
+	10700 2750 10750 2750
+Wire Wire Line
+	10750 2750 10750 3000
+Wire Wire Line
+	10750 3000 10100 3000
+Wire Wire Line
+	10100 3000 10100 2850
+Text Label 10750 2750 0    118  ~ 0
+AIN0
+Text Label 10750 3450 0    118  ~ 0
+AIN2
+Text Label 10750 5250 0    118  ~ 0
+AIN4
+Text Label 10800 5950 0    118  ~ 0
+Ain6
+Wire Wire Line
+	4450 3150 4450 3400
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 1 1 62DFAD2F
+P 4300 6700
+F 0 "U?" H 4300 7067 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 4300 6976 50  0000 C CNN
+F 2 "" H 4300 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 4300 6700 50  0001 C CNN
+	1    4300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA2333xxDGK U?
+U 2 1 62DFAD35
+P 4700 9050
+F 0 "U?" H 4700 9417 50  0000 C CNN
+F 1 "OPA2333xxDGK" H 4700 9326 50  0000 C CNN
+F 2 "" H 4700 9050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 4700 9050 50  0001 C CNN
+	2    4700 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 6950 4600 6950
+Wire Wire Line
+	4600 6950 4600 6700
+Text Label 4600 6700 0    118  ~ 0
+AIN4
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 62E01A1F
+P 900 5050
+F 0 "J?" H 828 5288 50  0000 C CNN
+F 1 "Conn_Coaxial" H 828 5197 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 900 5050 50  0001 C CNN
+F 3 " ~" H 900 5050 50  0001 C CNN
+	1    900  5050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A25
+P 1850 5050
+F 0 "R?" V 1654 5050 50  0000 C CNN
+F 1 "9M" V 1745 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 1850 5050 50  0001 C CNN
+F 3 "~" H 1850 5050 50  0001 C CNN
+	1    1850 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A2B
+P 2150 5050
+F 0 "R?" V 1954 5050 50  0000 C CNN
+F 1 "900K" V 2045 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2150 5050 50  0001 C CNN
+F 3 "~" H 2150 5050 50  0001 C CNN
+	1    2150 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A31
+P 2450 5050
+F 0 "R?" V 2254 5050 50  0000 C CNN
+F 1 "90K" V 2345 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2450 5050 50  0001 C CNN
+F 3 "~" H 2450 5050 50  0001 C CNN
+	1    2450 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A37
+P 2750 5050
+F 0 "R?" V 2554 5050 50  0000 C CNN
+F 1 "9K" V 2645 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2750 5050 50  0001 C CNN
+F 3 "~" H 2750 5050 50  0001 C CNN
+	1    2750 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A3D
+P 3050 5050
+F 0 "R?" V 2854 5050 50  0000 C CNN
+F 1 "1K" V 2945 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3050 5050 50  0001 C CNN
+F 3 "~" H 3050 5050 50  0001 C CNN
+	1    3050 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E01A43
+P 2750 5600
+F 0 "R?" V 2554 5600 50  0000 C CNN
+F 1 "0R" V 2645 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2750 5600 50  0001 C CNN
+F 3 "~" H 2750 5600 50  0001 C CNN
+	1    2750 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E01A49
+P 1450 5450
+F 0 "D?" V 1404 5530 50  0000 L CNN
+F 1 "D_TVS" V 1495 5530 50  0000 L CNN
+F 2 "" H 1450 5450 50  0001 C CNN
+F 3 "~" H 1450 5450 50  0001 C CNN
+	1    1450 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E01A4F
+P 3650 5700
+F 0 "D?" V 3604 5780 50  0000 L CNN
+F 1 "D_TVS" V 3695 5780 50  0000 L CNN
+F 2 "" H 3650 5700 50  0001 C CNN
+F 3 "~" H 3650 5700 50  0001 C CNN
+	1    3650 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 5300 1450 5050
+Wire Wire Line
+	1450 5050 1100 5050
+Wire Wire Line
+	1450 5050 1750 5050
+Connection ~ 1450 5050
+Wire Wire Line
+	1950 5050 2000 5050
+Wire Wire Line
+	2250 5050 2350 5050
+Wire Wire Line
+	2550 5050 2650 5050
+Wire Wire Line
+	2850 5050 2950 5050
+Wire Wire Line
+	2000 5050 2000 5600
+Wire Wire Line
+	2000 5600 2650 5600
+Connection ~ 2000 5050
+Wire Wire Line
+	2000 5050 2050 5050
+Wire Wire Line
+	1450 5600 1450 5650
+Wire Wire Line
+	1450 5650 900  5650
+Wire Wire Line
+	900  5650 900  5250
+Wire Wire Line
+	1450 5650 1450 5900
+Wire Wire Line
+	1450 5900 3150 5900
+Wire Wire Line
+	3650 5900 3650 5850
+Connection ~ 1450 5650
+Wire Wire Line
+	2850 5600 3250 5600
+Wire Wire Line
+	3250 5600 3250 5550
+Wire Wire Line
+	3250 5550 3600 5550
+Wire Wire Line
+	3150 5050 3250 5050
+Wire Wire Line
+	3250 5050 3250 5450
+Wire Wire Line
+	3250 5450 3150 5450
+Wire Wire Line
+	3150 5450 3150 5900
+Connection ~ 3150 5900
+Wire Wire Line
+	3150 5900 3650 5900
+Wire Wire Line
+	3850 4900 3600 4900
+Wire Wire Line
+	3600 4900 3600 5550
+Connection ~ 3600 5550
+Wire Wire Line
+	3600 5550 3650 5550
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 62E0747F
+P 1050 6750
+F 0 "J?" H 978 6988 50  0000 C CNN
+F 1 "Conn_Coaxial" H 978 6897 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 1050 6750 50  0001 C CNN
+F 3 " ~" H 1050 6750 50  0001 C CNN
+	1    1050 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E07485
+P 2000 6750
+F 0 "R?" V 1804 6750 50  0000 C CNN
+F 1 "9M" V 1895 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2000 6750 50  0001 C CNN
+F 3 "~" H 2000 6750 50  0001 C CNN
+	1    2000 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E0748B
+P 2300 6750
+F 0 "R?" V 2104 6750 50  0000 C CNN
+F 1 "900K" V 2195 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2300 6750 50  0001 C CNN
+F 3 "~" H 2300 6750 50  0001 C CNN
+	1    2300 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E07491
+P 2600 6750
+F 0 "R?" V 2404 6750 50  0000 C CNN
+F 1 "90K" V 2495 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2600 6750 50  0001 C CNN
+F 3 "~" H 2600 6750 50  0001 C CNN
+	1    2600 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E07497
+P 2900 6750
+F 0 "R?" V 2704 6750 50  0000 C CNN
+F 1 "9K" V 2795 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2900 6750 50  0001 C CNN
+F 3 "~" H 2900 6750 50  0001 C CNN
+	1    2900 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E0749D
+P 3200 6750
+F 0 "R?" V 3004 6750 50  0000 C CNN
+F 1 "1K" V 3095 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3200 6750 50  0001 C CNN
+F 3 "~" H 3200 6750 50  0001 C CNN
+	1    3200 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E074A3
+P 2900 7300
+F 0 "R?" V 2704 7300 50  0000 C CNN
+F 1 "0R" V 2795 7300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2900 7300 50  0001 C CNN
+F 3 "~" H 2900 7300 50  0001 C CNN
+	1    2900 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E074A9
+P 1600 7150
+F 0 "D?" V 1554 7230 50  0000 L CNN
+F 1 "D_TVS" V 1645 7230 50  0000 L CNN
+F 2 "" H 1600 7150 50  0001 C CNN
+F 3 "~" H 1600 7150 50  0001 C CNN
+	1    1600 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E074AF
+P 3800 7400
+F 0 "D?" V 3754 7480 50  0000 L CNN
+F 1 "D_TVS" V 3845 7480 50  0000 L CNN
+F 2 "" H 3800 7400 50  0001 C CNN
+F 3 "~" H 3800 7400 50  0001 C CNN
+	1    3800 7400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 7000 1600 6750
+Wire Wire Line
+	1600 6750 1250 6750
+Wire Wire Line
+	1600 6750 1900 6750
+Connection ~ 1600 6750
+Wire Wire Line
+	2100 6750 2150 6750
+Wire Wire Line
+	2400 6750 2500 6750
+Wire Wire Line
+	2700 6750 2800 6750
+Wire Wire Line
+	3000 6750 3100 6750
+Wire Wire Line
+	2150 6750 2150 7300
+Wire Wire Line
+	2150 7300 2800 7300
+Connection ~ 2150 6750
+Wire Wire Line
+	2150 6750 2200 6750
+Wire Wire Line
+	1600 7300 1600 7350
+Wire Wire Line
+	1600 7350 1050 7350
+Wire Wire Line
+	1050 7350 1050 6950
+Wire Wire Line
+	1600 7350 1600 7600
+Wire Wire Line
+	1600 7600 3300 7600
+Wire Wire Line
+	3800 7600 3800 7550
+Connection ~ 1600 7350
+Wire Wire Line
+	3000 7300 3400 7300
+Wire Wire Line
+	3400 7300 3400 7250
+Wire Wire Line
+	3400 7250 3750 7250
+Wire Wire Line
+	3300 6750 3400 6750
+Wire Wire Line
+	3400 6750 3400 7150
+Wire Wire Line
+	3400 7150 3300 7150
+Wire Wire Line
+	3300 7150 3300 7600
+Connection ~ 3300 7600
+Wire Wire Line
+	3300 7600 3800 7600
+Wire Wire Line
+	4000 6600 3750 6600
+Wire Wire Line
+	3750 6600 3750 7250
+Connection ~ 3750 7250
+Wire Wire Line
+	3750 7250 3800 7250
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 62E1F818
+P 1450 9100
+F 0 "J?" H 1378 9338 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1378 9247 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 1450 9100 50  0001 C CNN
+F 3 " ~" H 1450 9100 50  0001 C CNN
+	1    1450 9100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F81E
+P 2400 9100
+F 0 "R?" V 2204 9100 50  0000 C CNN
+F 1 "9M" V 2295 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2400 9100 50  0001 C CNN
+F 3 "~" H 2400 9100 50  0001 C CNN
+	1    2400 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F824
+P 2700 9100
+F 0 "R?" V 2504 9100 50  0000 C CNN
+F 1 "900K" V 2595 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2700 9100 50  0001 C CNN
+F 3 "~" H 2700 9100 50  0001 C CNN
+	1    2700 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F82A
+P 3000 9100
+F 0 "R?" V 2804 9100 50  0000 C CNN
+F 1 "90K" V 2895 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3000 9100 50  0001 C CNN
+F 3 "~" H 3000 9100 50  0001 C CNN
+	1    3000 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F830
+P 3300 9100
+F 0 "R?" V 3104 9100 50  0000 C CNN
+F 1 "9K" V 3195 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3300 9100 50  0001 C CNN
+F 3 "~" H 3300 9100 50  0001 C CNN
+	1    3300 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F836
+P 3600 9100
+F 0 "R?" V 3404 9100 50  0000 C CNN
+F 1 "1K" V 3495 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3600 9100 50  0001 C CNN
+F 3 "~" H 3600 9100 50  0001 C CNN
+	1    3600 9100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 62E1F83C
+P 3300 9650
+F 0 "R?" V 3104 9650 50  0000 C CNN
+F 1 "0R" V 3195 9650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3300 9650 50  0001 C CNN
+F 3 "~" H 3300 9650 50  0001 C CNN
+	1    3300 9650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E1F842
+P 2000 9500
+F 0 "D?" V 1954 9580 50  0000 L CNN
+F 1 "D_TVS" V 2045 9580 50  0000 L CNN
+F 2 "" H 2000 9500 50  0001 C CNN
+F 3 "~" H 2000 9500 50  0001 C CNN
+	1    2000 9500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 62E1F848
+P 4200 9750
+F 0 "D?" V 4154 9830 50  0000 L CNN
+F 1 "D_TVS" V 4245 9830 50  0000 L CNN
+F 2 "" H 4200 9750 50  0001 C CNN
+F 3 "~" H 4200 9750 50  0001 C CNN
+	1    4200 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 9350 2000 9100
+Wire Wire Line
+	2000 9100 1650 9100
+Wire Wire Line
+	2000 9100 2300 9100
+Connection ~ 2000 9100
+Wire Wire Line
+	2500 9100 2550 9100
+Wire Wire Line
+	2800 9100 2900 9100
+Wire Wire Line
+	3100 9100 3200 9100
+Wire Wire Line
+	3400 9100 3500 9100
+Wire Wire Line
+	2550 9100 2550 9650
+Wire Wire Line
+	2550 9650 3200 9650
+Connection ~ 2550 9100
+Wire Wire Line
+	2550 9100 2600 9100
+Wire Wire Line
+	2000 9650 2000 9700
+Wire Wire Line
+	2000 9700 1450 9700
+Wire Wire Line
+	1450 9700 1450 9300
+Wire Wire Line
+	2000 9700 2000 9950
+Wire Wire Line
+	2000 9950 3700 9950
+Wire Wire Line
+	4200 9950 4200 9900
+Connection ~ 2000 9700
+Wire Wire Line
+	3400 9650 3800 9650
+Wire Wire Line
+	3800 9650 3800 9600
+Wire Wire Line
+	3800 9600 4150 9600
+Wire Wire Line
+	3700 9100 3800 9100
+Wire Wire Line
+	3800 9100 3800 9500
+Wire Wire Line
+	3800 9500 3700 9500
+Wire Wire Line
+	3700 9500 3700 9950
+Connection ~ 3700 9950
+Wire Wire Line
+	3700 9950 4200 9950
+Wire Wire Line
+	4400 8950 4150 8950
+Wire Wire Line
+	4150 8950 4150 9600
+Connection ~ 4150 9600
+Wire Wire Line
+	4150 9600 4200 9600
+$EndSCHEMATC
